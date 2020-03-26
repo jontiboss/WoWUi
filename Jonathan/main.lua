@@ -48,6 +48,9 @@ local function colour(statusbar, unit)
    
     local t="Interface\\TargetingFrame\\UI-TargetingFrame-rare"PlayerFrameTexture:SetTexture(t)hooksecurefunc("TargetFrame_Update",function(f)if UnitIsPlayer(f.unit)then _G[f:GetName().."TextureFrameTexture"]:SetTexture(t)end end)
 ToggleMinimap();
+StanceButton1:ClearAllPoints()
+StanceButton1:SetPoint("cENTER",-6000,0)
+StanceButton1.SetPoint = function() end
 MultiBarBottomLeftButton1:ClearAllPoints();
 MultiBarBottomLeftButton1:SetPoint("CENTER",-232,0);
 MultiBarBottomLeftButton1.SetPoint = function() end;
